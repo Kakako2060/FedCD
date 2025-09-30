@@ -9,7 +9,7 @@ from torchvision.utils import save_image
 import os
 import time
 device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
-from FLAlgorithms.users.userpFedFOR import UserpFedFOR
+from FLAlgorithms.users.userFedCD import UserF
 from FLAlgorithms.servers.serverbase import Server
 from utils.model_utils import *
 from FLAlgorithms.trainmodel.train_gan_fn import *
@@ -24,7 +24,7 @@ MIN_SAMPLES_PER_LABEL = 1
 #'mnist': (256, 32, 1, 10, 32),
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-class FedFOR(Server):
+class FedFCD(Server):
     def __init__(self, args, model, seed):
         super().__init__(args, model, seed)
 

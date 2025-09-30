@@ -1,22 +1,14 @@
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import gc
+
 from sklearn.cluster import DBSCAN
-import torch
-from torch import svd_lowrank
-from sklearn.neighbors import NearestNeighbors
 from FLAlgorithms.users.userbase import User
 from FLAlgorithms.trainmodel.gan_models import *
 from utils.model_utils import *
-from scipy.optimize import minimize
 from collections import Counter
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
-from torch.utils.data import Subset, DataLoader
-import pandas as pd
+from torch.utils.data import DataLoader
 from sklearn.metrics import silhouette_score
-from utils.model_utils import get_log_path, METRICS
+from utils.model_utils import  METRICS
 
 cuda = torch.cuda.is_available()
 device = torch.device("cuda:0" if cuda else "cpu")
@@ -24,7 +16,7 @@ import copy
 MIN_SAMPLES_PER_LABEL = 1
 
 
-class UserpFedFOR(User):
+class UserFedCD(User):
     def __init__(self,
                  args, id, model,
                  train_data, test_data,

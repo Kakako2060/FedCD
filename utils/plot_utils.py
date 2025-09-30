@@ -47,7 +47,7 @@ def get_label_name(name):
         name = 'FedMut'
     elif 'FedAWARE' in name:
         name = 'FedAWARE'
-    elif 'FedFOR' in name:
+    elif 'FedCD' in name:
         name = 'FedCD'
     return name
 

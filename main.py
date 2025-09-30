@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import argparse
-from FLAlgorithms.servers.serverpFedFOR import FedFOR
+from FLAlgorithms.servers.serverFedCD import FedFCD
 from FLAlgorithms.servers.serveravg import FedAvg
 from FLAlgorithms.servers.serverFedWASS import FedWASS
 from FLAlgorithms.servers.serverFedProx import FedProx
@@ -20,8 +20,8 @@ def create_server_n_user(args, i):
     device = torch.device(args.device)
     model = create_model(args.model, args.dataset, args.algorithm, args.numclass).to(device)
 
-    if 'FedFOR' in args.algorithm:
-        server = FedFOR(args, model, i)
+    if 'FedFCD' in args.algorithm:
+        server = FedFCD(args, model, i)
     elif 'FedWASS' in args.algorithm:
         server = FedWASS(args, model, i)
     elif 'FedAPEN' in args.algorithm:
