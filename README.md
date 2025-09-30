@@ -23,6 +23,21 @@ python generate_niid_dirichlet.py --n_class 100 --sampling_ratio 0.99 --alpha 0.
 ### This will generate a dataset located at FedGen/data/Cifa100/u20c100-alpha0.1-ratio0.99/
 </code></pre> 
 
+### Download data used in the paper from Google Drive
+Below are the download links for the Retina, COVID-FL, and Derm datasets.
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom"></th>
+<th valign="bottom">Retina</th>
+<th valign="bottom">COVID-FL</th>
+<!-- TABLE BODY -->
+<tr><td align="left">Download Link</td>
+<td align="center"><a href="https://drive.google.com/file/d/1bW--_qRZnWbkb0XXvGBCSferdqXZ6pe7/view?usp=share_link">link</a></td>
+<td align="center"><a href="https://drive.google.com/file/d/1cuvoYvt-EVs5qtA5Xgos0yUJmfPhRbwg/view?usp=share_link">link</a></td>
+</tr>
+</tbody></table>
+
 ## Run Experiments: 
 
 There is a main file "main.py" which allows running all experiments.
