@@ -1,4 +1,4 @@
-# Two-Stage Heterogeneous Federated Learning Algorithm with Theoretical Guarantees
+# 2 Two-Stage Heterogeneous Federated Learning Algorithm with Theoretical Guarantees
 
 Research code that accompanies the paper [Two-Stage Heterogeneous Federated Learning Algorithm with Theoretical Guarantees].
 It contains implementation of the following algorithms:
