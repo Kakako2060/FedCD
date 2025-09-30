@@ -11,7 +11,7 @@ It contains implementation of the following algorithms:
   
 ## Prepare Dataset: 
 * To generate *non-iid* **Cifar10** Dataset following the Dirichlet distribution D(&alpha;=0.1) for 20 clients, using 99% of the total available training samples:
-<pre><code>cd FedCD/data/Mnist
+<pre><code>cd FedCD/data/Cifar
 python generate_niid_dirichlet.py --n_class 10 --sampling_ratio 0.99 --alpha 0.1 --n_user 20
 ### This will generate a dataset located at FedCD/data/Cifar/u20c10-alpha0.1-ratio0.99/
 </code></pre>
